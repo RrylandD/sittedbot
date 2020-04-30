@@ -1,9 +1,8 @@
-import os
+limport os
 import os.path
 
 import discord
 from dotenv import load_dotenv
-from keep_alive import keep_alive
 
 from discord.ext import commands
 
@@ -40,5 +39,4 @@ async def sit(ctx, *mob_name):
 		txt_file.write(' '.join(mob_name)+'\n')
 	await ctx.send(response)
 
-keep_alive()
 bot.run(TOKEN)
